@@ -1,23 +1,24 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #EEEEEE;
     color: #333;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    position: relative;
 }
 
 img {
     width: 100%;
-    height: auto;
-    filter: drop-shadow(10px 10px 40px #9E9E9E);
+    height: 100vh; /* Установить высоту изображения равной высоте экрана */
+    object-fit: cover; /* Обеспечивает корректное отображение изображения */
     position: absolute;
     top: 0;
     left: 0;
+    filter: drop-shadow(10px 10px 40px #9E9E9E);
 }
 
 .fade-in {
@@ -69,14 +70,12 @@ main {
 
 .invitation .date {
     font-size: 2.5em;
-   
 }
 
 .invitation .names {
     font-size: 7em;
     color: #e32424;
     margin-top: 0.5em;
-   
 }
 
 .details {
