@@ -9,11 +9,18 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 img {
     width: 100%;
-    height: 100vh; /* Установить высоту изображения равной высоте экрана */
+    height: 100%;
     object-fit: cover; /* Обеспечивает корректное отображение изображения */
     position: absolute;
     top: 0;
@@ -32,31 +39,18 @@ img {
     }
 }
 
-.container {
-    max-width: 800px;
-    width: 90%;
-    background: #EEEEEE;
-    padding: 20px;
-    padding-top: 15vh; /* Добавлен отступ сверху для создания пространства между изображением и текстом */
-    border-radius: 8px;
-    text-align: center;
+main {
     position: relative;
     z-index: 1;
-    margin-top: 0; /* Установлен верхний отступ на ноль */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
-header h1 {
-    font-family: "Great Vibes", cursive;
-    font-weight: 500;
-    font-size: 5em;
-    color: #ede4a2;
-    text-shadow: 2px 2px 2px rgb(143, 73, 3);
-    opacity: 0;
-    animation: fadeInAnimation 4s forwards;
-}
-
-main {
-    margin: 20px 0;
+.invitation {
+    background: rgba(238, 238, 238, 0.8);
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .invitation p {
@@ -152,3 +146,4 @@ footer a:hover {
         font-size: 1.2em;
     }
 }
+
