@@ -13,6 +13,7 @@ body {
 
 img {
     width: 100%;
+    height: auto;
     filter: drop-shadow(10px 10px 40px #9E9E9E);
     position: absolute;
     top: 0;
